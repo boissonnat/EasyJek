@@ -3,7 +3,7 @@ require "rubygems" # ruby1.9 doesn't "require" it though
 require "thor"
 require "fileutils"
 
-class Jekyll_Tool < Thor
+class Easyjek < Thor
   desc "new_post title, category", "Create a new Post"
   def new_post(title, category)
   	# Ensure we got a '_posts' folder before doing anything
@@ -41,4 +41,4 @@ class Jekyll_Tool < Thor
   end
 end
 
-Jekyll_Tool.start
+Easyjek.start
