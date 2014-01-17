@@ -67,7 +67,7 @@ thor easyjek:new_post title  # Create a new Post
 If you see easyjek in the list below, you should be able to run easyjek with :
 
 ```
-thor easyjek
+bash$ thor easyjek
 Commands:
   thor easyjek:help [COMMAND]  # Describe available commands or one specific command
   thor easyjek:new_post title  # Create a new Post
