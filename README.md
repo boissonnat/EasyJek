@@ -3,7 +3,7 @@
 __EasyJek__ is a command line tool which help you to create easily your jekyll resources.
 
 
-## Installation
+## Install EasyJek as command line
 
 #### 1. Thor
 __EasyJek__ is based on the [thor](https://github.com/erikhuda/thor) toolkit. You can install it through its gem :
@@ -47,3 +47,28 @@ You can rename the ```easyjek.rb``` file with ```easyjek```which will allow you 
 bash$ cd /tmp
 bash$ easyjek
 ```
+
+## Install EasyJek as a Thor command
+__Thor__ offers the possibility to add some tasks in the global thor repository
+
+```
+bash$ thor install easyjek.rb
+```
+
+You should be able to list the available thor tasks with :
+
+```
+bash$ thor list
+easyjek
+-------
+thor easyjek:new_post title  # Create a new Post
+```
+
+If you see easyjek in the list below, you should be able to run easyjek with :
+
+```
+thor easyjek
+Commands:
+  thor easyjek:help [COMMAND]  # Describe available commands or one specific command
+  thor easyjek:new_post title  # Create a new Post
+``
